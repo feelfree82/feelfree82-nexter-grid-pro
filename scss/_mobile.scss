@@ -1,0 +1,27 @@
+// Wide screens
+@include mediaXl {
+}
+
+// Desktops & Laptops
+@include mediaLg {
+}
+
+// Tablets & Small Laptops
+@include mediaMd {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "menu menu"
+      "header header"
+      "realtors realtors"
+      "features features"
+      "story story"
+      "homes homes"
+      "gallery gallery"
+      "footer footer";
+  }
+}
+
+// Smartphones
+@include mediaSm {
+}
